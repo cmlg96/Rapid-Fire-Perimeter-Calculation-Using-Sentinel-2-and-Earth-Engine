@@ -94,4 +94,4 @@ Finalmente, se usa:
 
 Esto permite al usuario descargar el archivo `.geojson` directamente a su entorno local para posteriores análisis en QGIS, ArcGIS o cualquier herramienta SIG.
 
-![alt text](https://github.com/cmlg96/practice/blob/main/7.JPG)
+<img src="https://github.com/cmlg96/practice/blob/main/7.JPG" width="600"/>
