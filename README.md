@@ -3,13 +3,13 @@
 🔥 Análisis de impacto del fuego con Sentinel-2 y geemap
 --------------------------------------------------------
 
-Este flujo de trabajo aprovecha el potencial de Sentinel-2 y el índice NBR (Normalized Burn Ratio) para evaluar el impacto de incendios forestales, desde la detección del área afectada hasta la exportación de polígonos de interés. Todo el proceso se apoya en `geemap`, `folium` y la potencia de Google Earth Engine.
+Este flujo de trabajo aprovecha el potencial de Sentinel-2 y el índice NBR (Normalized Burn Ratio) para evaluar la severidad de incendios forestales, desde la detección del área afectada hasta la exportación del perímetro del incendio. Todo el proceso se apoya en `geemap`, `folium` y la potencia de Google Earth Engine.
 
 * * * * *
 
 ### 🛰️ Comparativa Pre y Post Incendio con NBR
 
-Se seleccionan dos imágenes de Sentinel-2, una previa y otra posterior al evento. Se calcula el **NBR** para ambas fechas, utilizando la fórmula clásica:
+Se seleccionan dos imágenes de Sentinel-2, una previa y otra posterior. Se calcula el **NBR** para ambas fechas, utilizando la fórmula clásica:
 
 `NBR = (B8 - B12) / (B8 + B12)`
 
@@ -43,7 +43,7 @@ Se implementan dos tipos de visualización:
 
 #### 🔁 Split Map Interactivo
 
-Utilizando `geemap.split_map`, se presenta un mapa interactivo lado a lado con las imágenes pre y post-incendio, o bien el NBR vs dNBR, lo que facilita la inspección visual del cambio.
+Utilizando `geemap.split_map`, se presenta un mapa interactivo lado a lado con las imágenes pre y post-incendio, lo que facilita la inspección visual del cambio.
 
 ![alt text](https://github.com/cmlg96/practice/blob/main/1.JPG)
 
